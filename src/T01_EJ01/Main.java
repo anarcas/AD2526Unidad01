@@ -58,7 +58,7 @@ public class Main {
 
             // Manejo de excepciones (IOException y ClassNotFoundException)
         } catch (IOException | ClassNotFoundException ex) {
-            System.err.println(ex.getCause());
+            System.err.println(ex.getCause()+ex.getMessage());
         } finally {
             // Bloque para asegurar el cierre del flujo de salida si está abierto
             try {
